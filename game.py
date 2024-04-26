@@ -92,7 +92,7 @@ class Game:
     def play(self):
         while self.winner == None:
             chosen_col = None
-            if len(self.board.legal_choices) == 0:
+            if len(self.board.legal_choices()) == 0:
                 self.winner = "Tie"
                 return
             #player chooses 
